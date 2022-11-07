@@ -11,7 +11,6 @@ import java.util.Objects;
 @Entity
 @Getter @Setter
 @NoArgsConstructor
-@RequiredArgsConstructor
 @ToString
 @Table(name = "Roles")
 public class Role {

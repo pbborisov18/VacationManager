@@ -10,7 +10,6 @@ import java.util.Objects;
 @Entity
 @Getter @Setter
 @NoArgsConstructor
-@RequiredArgsConstructor
 @ToString
 @Table(name = "Leaves")
 public class Leave {

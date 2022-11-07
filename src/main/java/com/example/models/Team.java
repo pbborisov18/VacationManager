@@ -2,6 +2,7 @@ package com.example.models;
 
 import lombok.*;
 import org.hibernate.Hibernate;
+import org.springframework.lang.Nullable;
 
 import javax.persistence.*;
 import java.util.List;
@@ -10,7 +11,6 @@ import java.util.Objects;
 @Entity
 @Getter @Setter
 @NoArgsConstructor
-@RequiredArgsConstructor
 @ToString
 @Table (name = "Teams")
 public class Team {
@@ -20,6 +20,7 @@ public class Team {
     @ManyToOne(fetch = FetchType.LAZY,optional = false)
     @JoinColumn(name = "ProjectId", nullable = false)
     @ToString.Exclude
+    @Nullable
     private Project project;
 
     @OneToMany(mappedBy = "team", fetch = FetchType.LAZY, cascade = CascadeType.ALL)

@@ -2,6 +2,7 @@ package com.example.models;
 
 import lombok.*;
 import org.hibernate.Hibernate;
+import org.springframework.lang.Nullable;
 
 import javax.persistence.*;
 import java.util.List;
@@ -10,8 +11,7 @@ import java.util.Objects;
 @Entity
 @Getter @Setter
 @NoArgsConstructor
-@RequiredArgsConstructor
-@ToString (exclude = "studentList")
+@ToString
 @Table(name = "Users")
 public class User {
 
@@ -25,10 +25,12 @@ public class User {
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "RoleId", nullable = false)
     @ToString.Exclude
+    @Nullable
     private Role role;
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "TeamId", nullable = false)
     @ToString.Exclude
+    @Nullable
     private Team team;
     private boolean isLeadDev;
 
