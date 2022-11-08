@@ -4,27 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ee4f8ad-0a93-4356-8c23-8029da72bea6" name="Changes" comment="JPA and data side">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/repositories/LeaveRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/repositories/RoleRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/repositories/TeamRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/repositories/UserRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="4ee4f8ad-0a93-4356-8c23-8029da72bea6" name="Changes" comment="Trying tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/models/Leave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/models/Leave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/models/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/models/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/models/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/models/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/models/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/models/Team.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/repositories/LeaveRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/repositories/LeaveRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/repositories/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/repositories/ProjectRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/repositories/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/repositories/RoleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/repositories/TeamRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/repositories/TeamRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/H2TestConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/repositories/LeaveRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/repositories/LeaveRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/repositories/TeamRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/repositories/TeamRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/repositories/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/repositories/UserRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,36 +57,39 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2GlzWTl6gR1PAZwXLPsrJeuG6al" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "D:/bullshit/programi/proekt(antoni)/ayo/demo",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.com.haulmont.jpb.tools",
-    "spring.configuration.checksum": "fe01ce2a7fbac8fafaed7c982a04e229"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/bullshit/programi/proekt(antoni)/ayo/demo&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.com.haulmont.jpb.tools&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;fe01ce2a7fbac8fafaed7c982a04e229&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlserver.localdb",
-      "sqlserver"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver.localdb&quot;,
+      &quot;sqlserver&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -112,8 +101,8 @@
       <recent name="com.example.repositories" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RoleRepositoryTest">
-    <configuration name="RoleRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.com.example in demo">
+    <configuration name="UserRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -122,13 +111,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.repositories" />
-      <option name="MAIN_CLASS_NAME" value="com.example.repositories.RoleRepositoryTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.repositories.UserRepositoryTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoleRepositoryTest.findByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRepositoryTest.countByRoleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -137,14 +126,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.repositories" />
-      <option name="MAIN_CLASS_NAME" value="com.example.repositories.RoleRepositoryTest" />
-      <option name="METHOD_NAME" value="findByIdTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.repositories.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="countByRoleTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoleRepositoryTest.findByRoleNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRepositoryTest.getAllByTeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -153,9 +142,39 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.repositories" />
-      <option name="MAIN_CLASS_NAME" value="com.example.repositories.RoleRepositoryTest" />
-      <option name="METHOD_NAME" value="findByRoleNameTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.repositories.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="getAllByTeamTest" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTest.getUserByTeamAndLeadDevIsTrueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.repositories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.repositories" />
+      <option name="MAIN_CLASS_NAME" value="com.example.repositories.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="getUserByTeamAndLeadDevIsTrueTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.example in demo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -169,9 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RoleRepositoryTest" />
-        <item itemvalue="JUnit.RoleRepositoryTest.findByRoleNameTest" />
-        <item itemvalue="JUnit.RoleRepositoryTest.findByIdTest" />
+        <item itemvalue="JUnit.com.example in demo" />
+        <item itemvalue="JUnit.UserRepositoryTest.getUserByTeamAndLeadDevIsTrueTest" />
+        <item itemvalue="JUnit.UserRepositoryTest" />
+        <item itemvalue="JUnit.UserRepositoryTest.getAllByTeamTest" />
+        <item itemvalue="JUnit.UserRepositoryTest.countByRoleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +214,8 @@
       <workItem from="1667302032122" duration="641000" />
       <workItem from="1667747368573" duration="4993000" />
       <workItem from="1667830950159" duration="256000" />
-      <workItem from="1667833791772" duration="8850000" />
+      <workItem from="1667833791772" duration="9906000" />
+      <workItem from="1667930918075" duration="9444000" />
     </task>
     <task id="LOCAL-00001" summary="JPA and data side">
       <created>1667300610124</created>
@@ -209,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667302300806</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Trying tests">
+      <created>1667857738033</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667857738033</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +260,7 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="JPA and data side" />
-    <option name="LAST_COMMIT_MESSAGE" value="JPA and data side" />
+    <MESSAGE value="Trying tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying tests" />
   </component>
 </project>

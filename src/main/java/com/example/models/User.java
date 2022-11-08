@@ -2,7 +2,6 @@ package com.example.models;
 
 import lombok.*;
 import org.hibernate.Hibernate;
-import org.springframework.lang.Nullable;
 
 import javax.persistence.*;
 import java.util.List;
@@ -25,20 +24,19 @@ public class User {
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "RoleId", nullable = false)
     @ToString.Exclude
-    @Nullable
     private Role role;
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "TeamId", nullable = false)
     @ToString.Exclude
-    @Nullable
     private Team team;
-    private boolean isLeadDev;
+    @Column(name = "isLeadDev")
+    private boolean leadDev;
 
     @OneToMany(mappedBy = "user",fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @ToString.Exclude
     private List<Leave> studentList;
 
-    public User(String username, String password, byte[] salt, String firstName, String lastName, Role role, Team team) {
+    public User(String username, String password, byte[] salt, String firstName, String lastName, Role role, Team team, boolean leadDev) {
         this.username = username;
         this.password = password;
         this.salt = salt;
@@ -46,6 +44,7 @@ public class User {
         this.lastName = lastName;
         this.role = role;
         this.team = team;
+        this.leadDev = leadDev;
     }
 
     @Override

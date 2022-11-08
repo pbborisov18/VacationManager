@@ -15,6 +15,6 @@ public interface UserRepository extends CrudRepository<User, Integer> {
     List<User> getAllByRole(Role role);
     int countByRole(Role role);
     List<User> getAllByTeam(Team team);
-    //User getUserByLeadDevAndTeam(User user, Team team);
+    User getUserByTeamAndLeadDevIsTrue(Team team);
     
 }
