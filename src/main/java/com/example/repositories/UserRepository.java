@@ -8,6 +8,7 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 @EnableAutoConfiguration //Useless but bug in spring boot (prob fixed in later versions)
@@ -16,5 +17,7 @@ public interface UserRepository extends CrudRepository<User, Integer> {
     int countByRole(Role role);
     List<User> getAllByTeam(Team team);
     User getUserByTeamAndLeadDevIsTrue(Team team);
+
+    Optional<User> findByUsername(String username);
     
 }

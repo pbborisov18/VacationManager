@@ -60,12 +60,12 @@ class UserRepositoryTest {
     @Test
     void getAllByRoleTest() {
         //Given
-        User user1 = new User("user1","pass1", "123".getBytes(), "fName1", "lName1", role1, team1, false);
-        User user2 = new User("user2","pass2", "123".getBytes(), "fName2", "lName2", role1, team1, false);
-        User user3 = new User("user3","pass3", "123".getBytes(), "fName3", "lName3", role1, team1, false);
+        User user1 = new User("user1","pass1", "fName1", "lName1", role1, team1, false);
+        User user2 = new User("user2","pass2", "fName2", "lName2", role1, team1, false);
+        User user3 = new User("user3","pass3", "fName3", "lName3", role1, team1, false);
 
-        User user4 = new User("user4","pass4", "123".getBytes(), "fName4", "lName4", role2, team1, false);
-        User user5 = new User("user5","pass5", "123".getBytes(), "fName5", "lName5", role2, team1, false);
+        User user4 = new User("user4","pass4", "fName4", "lName4", role2, team1, false);
+        User user5 = new User("user5","pass5", "fName5", "lName5", role2, team1, false);
 
         //When
         userRepository.save(user1);
@@ -82,12 +82,12 @@ class UserRepositoryTest {
     @Test
     void countByRoleTest() {
         //Given
-        User user1 = new User("user1","pass1", "123".getBytes(), "fName1", "lName1", role1, team1, false);
-        User user2 = new User("user2","pass2", "123".getBytes(), "fName2", "lName2", role1, team1, false);
-        User user3 = new User("user3","pass3", "123".getBytes(), "fName3", "lName3", role1, team1, false);
+        User user1 = new User("user1","pass1", "fName1", "lName1", role1, team1, false);
+        User user2 = new User("user2","pass2", "fName2", "lName2", role1, team1, false);
+        User user3 = new User("user3","pass3", "fName3", "lName3", role1, team1, false);
 
-        User user4 = new User("user4","pass4", "123".getBytes(), "fName4", "lName4", role2, team1, false);
-        User user5 = new User("user5","pass5", "123".getBytes(), "fName5", "lName5", role2, team1, false);
+        User user4 = new User("user4","pass4", "fName4", "lName4", role2, team1, false);
+        User user5 = new User("user5","pass5", "fName5", "lName5", role2, team1, false);
 
         //When
         userRepository.save(user1);
@@ -105,12 +105,12 @@ class UserRepositoryTest {
     @Test
     void getAllByTeamTest() {
         //Given
-        User user1 = new User("user1","pass1", "123".getBytes(), "fName1", "lName1", role1, team1, false);
-        User user2 = new User("user2","pass2", "123".getBytes(), "fName2", "lName2", role1, team1, false);
-        User user3 = new User("user3","pass3", "123".getBytes(), "fName3", "lName3", role1, team1, false);
+        User user1 = new User("user1","pass1", "fName1", "lName1", role1, team1, false);
+        User user2 = new User("user2","pass2", "fName2", "lName2", role1, team1, false);
+        User user3 = new User("user3","pass3", "fName3", "lName3", role1, team1, false);
 
-        User user4 = new User("user4","pass4", "123".getBytes(), "fName4", "lName4", role1, team2, false);
-        User user5 = new User("user5","pass5", "123".getBytes(), "fName5", "lName5", role1, team2, false);
+        User user4 = new User("user4","pass4", "fName4", "lName4", role1, team2, false);
+        User user5 = new User("user5","pass5", "fName5", "lName5", role1, team2, false);
 
         //When
         userRepository.save(user1);
@@ -127,12 +127,12 @@ class UserRepositoryTest {
     @Test
     void getUserByTeamAndLeadDevIsTrueTest(){
         //Given
-        User user1 = new User("user1","pass1", "123".getBytes(), "fName1", "lName1", role1, team1, true);
-        User user2 = new User("user2","pass2", "123".getBytes(), "fName2", "lName2", role1, team1, false);
-        User user3 = new User("user3","pass3", "123".getBytes(), "fName3", "lName3", role1, team1, false);
+        User user1 = new User("user1","pass1", "fName1", "lName1", role1, team1, true);
+        User user2 = new User("user2","pass2", "fName2", "lName2", role1, team1, false);
+        User user3 = new User("user3","pass3", "fName3", "lName3", role1, team1, false);
 
-        User user4 = new User("user4","pass4", "123".getBytes(), "fName4", "lName4", role1, team2, true);
-        User user5 = new User("user5","pass5", "123".getBytes(), "fName5", "lName5", role1, team2, false);
+        User user4 = new User("user4","pass4", "fName4", "lName4", role1, team2, true);
+        User user5 = new User("user5","pass5", "fName5", "lName5", role1, team2, false);
 
         //When
         userRepository.save(user1);

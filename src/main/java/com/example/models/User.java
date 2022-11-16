@@ -18,10 +18,11 @@ public class User {
     private Integer id;
     private String username;
     private String password;
-    private byte[] salt;
     private String firstName;
     private String lastName;
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    //Had to change to fetchtype eager cuz bad design
+    //Almost no loss in performance because there are 3 roles by default
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "RoleId", nullable = false)
     @ToString.Exclude
     private Role role;
@@ -36,10 +37,9 @@ public class User {
     @ToString.Exclude
     private List<Leave> studentList;
 
-    public User(String username, String password, byte[] salt, String firstName, String lastName, Role role, Team team, boolean leadDev) {
+    public User(String username, String password, String firstName, String lastName, Role role, Team team, boolean leadDev) {
         this.username = username;
         this.password = password;
-        this.salt = salt;
         this.firstName = firstName;
         this.lastName = lastName;
         this.role = role;

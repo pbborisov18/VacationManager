@@ -51,11 +51,11 @@ public class LeaveRepositoryTest {
         projectRepository.save(project);
         teamRepository.save(team);
 
-        user1 = new User("user1","pass1", "123".getBytes(), "fName1", "lName1", role, team, false);
-        user2 = new User("user2","pass2", "123".getBytes(), "fName2", "lName2", role, team, false);
-        user3 = new User("user3","pass3", "123".getBytes(), "fName3", "lName3", role, team, false);
-        user4 = new User("user4","pass4", "123".getBytes(), "fName4", "lName4", role, team, false);
-        user5 = new User("user5","pass5", "123".getBytes(), "fName5", "lName5", role, team, false);
+        user1 = new User("user1","pass1",  "fName1", "lName1", role, team, false);
+        user2 = new User("user2","pass2",  "fName2", "lName2", role, team, false);
+        user3 = new User("user3","pass3",  "fName3", "lName3", role, team, false);
+        user4 = new User("user4","pass4",  "fName4", "lName4", role, team, false);
+        user5 = new User("user5","pass5",  "fName5", "lName5", role, team, false);
 
         userRepository.save(user1);
         userRepository.save(user2);
