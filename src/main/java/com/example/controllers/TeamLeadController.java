@@ -1,6 +1,8 @@
 package com.example.controllers;
 
+import com.example.models.User;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -10,8 +12,12 @@ import javax.servlet.http.HttpSession;
 public class TeamLeadController {
 
     @GetMapping(value = "/TeamLead")
-    public String teamLeadMainPage(HttpSession httpSession){
+    public String teamLeadMainPage(HttpSession httpSession, Model model){
         if(httpSession.getId().equals(httpSession.getAttribute("sessionId"))) {
+            User user = (User) httpSession.getAttribute("user");
+
+            model.addAttribute("username", user.getUsername());
+
             return "teamLeadMainPage";
         } else {
             return "redirect:/login";
@@ -26,7 +32,7 @@ public class TeamLeadController {
 
     @PostMapping(value="/TeamLead", params = "users")
     public String users(HttpSession httpSession){
-        return "teamLeadMainPage";
+        return "redirect:/users";
     }
 
     @PostMapping(value="/TeamLead", params = "teams")

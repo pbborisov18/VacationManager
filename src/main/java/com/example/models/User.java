@@ -26,7 +26,7 @@ public class User {
     @JoinColumn(name = "RoleId", nullable = false)
     @ToString.Exclude
     private Role role;
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "TeamId", nullable = false)
     @ToString.Exclude
     private Team team;

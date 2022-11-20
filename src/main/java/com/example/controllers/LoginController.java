@@ -46,9 +46,9 @@ public class LoginController {
         httpSession.setAttribute("sessionId", httpSession.getId());
 
         if(user.getUsername().equals(username) && BCrypt.checkpw(password, user.getPassword())) {
-            if(user.getRole().getRoleName().equals("TeamLead")){
+            if(user.getRole().getName().equals("TeamLead")){
                return "redirect:/TeamLead";
-            } else if(user.getRole().getRoleName().equals("CEO")) {
+            } else if(user.getRole().getName().equals("CEO")) {
                 return "redirect:/CEO";
             } else {
                 return "redirect:/Dev";

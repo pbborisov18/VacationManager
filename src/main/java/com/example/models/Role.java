@@ -17,15 +17,15 @@ public class Role {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Column(name = "RoleName")
-    private String roleName;
+    @Column(name = "Name")
+    private String name;
 
     @OneToMany(mappedBy = "role", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @ToString.Exclude
     private List<User> userList;
 
     public Role(String roleName) {
-        this.roleName = roleName;
+        this.name = roleName;
     }
 
     @Override

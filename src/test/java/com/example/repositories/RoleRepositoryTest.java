@@ -25,7 +25,7 @@ public class RoleRepositoryTest {
         roleRepository.save(role);
 
         //Then
-        assertThat(roleRepository.findRoleByRoleName(role.getRoleName()).get())
+        assertThat(roleRepository.findRoleByName(role.getName()).get())
                 .isEqualTo(role);
     }
 
@@ -36,7 +36,7 @@ public class RoleRepositoryTest {
         //When
 
         //Then
-        assertThat(roleRepository.findRoleByRoleName(role.getRoleName()).isEmpty()).isTrue();
+        assertThat(roleRepository.findRoleByName(role.getName()).isEmpty()).isTrue();
     }
 
     @Test
@@ -49,7 +49,7 @@ public class RoleRepositoryTest {
         roleRepository.save(correctRole);
 
         //Then
-        assertThat(roleRepository.findRoleByRoleName(wrongRole.getRoleName()).isEmpty())
+        assertThat(roleRepository.findRoleByName(wrongRole.getName()).isEmpty())
                 .isTrue()
                 .isNotEqualTo(correctRole);
     }

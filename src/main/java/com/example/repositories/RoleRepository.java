@@ -10,5 +10,5 @@ import java.util.Optional;
 @Repository
 @EnableAutoConfiguration //Useless but bug in spring boot (prob fixed in later versions)
 public interface RoleRepository extends CrudRepository<Role, Integer>{
-    Optional<Role> findRoleByRoleName(String roleName);
+    Optional<Role> findRoleByName(String roleName);
 }
