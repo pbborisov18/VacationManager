@@ -4,14 +4,16 @@
 <head>
     <title>Users</title>
 </head>
+
 <body>
 
-<table border="1">
-    <form action="/users" method="post">
-        <button name="back" type="submit" value="Back" formaction="/users/back">Back</button>
-    </form>
+<form name = "form" action="/users" method="post">
+    <button name="back" type="submit" value="Back" formaction="/users/back">Back</button>
+    <button type="submit" name="addUser" value="Add User" formaction="/users/addUser">Add User</button>
 
-    <thead>
+    <table border="1">
+
+        <thead>
         <tr>
             <th>Username</th>
             <th>First Name</th>
@@ -20,20 +22,24 @@
             <th>Team</th>
             <th>Project</th>
         </tr>
-    </thead>
-    <tbody>
+        </thead>
+        <tbody>
         <c:forEach items="${users}" var="user">
             <tr>
-                <td>${user.getUsername()}</td>
-                <td>${user.getFirstName()}</td>
-                <td>${user.getLastName()}</td>
-                <td>${user.getRole().getName()}</td>
-                <td>${user.getTeam().getName()}</td>
-                <td>${user.getTeam().getProject().getName()}</td>
+            <td>${user.getUsername()}</td>
+            <td>${user.getFirstName()}</td>
+            <td>${user.getLastName()}</td>
+            <td>${user.getRole().getName()}</td>
+            <td>${user.getTeam().getName()}</td>
+            <td>${user.getTeam().getProject().getName()}</td>
             </tr>
         </c:forEach>
-    </tbody>
-</table>
+        </tbody>
+
+
+
+    </table>
+</form>
 
 </body>
 </html>

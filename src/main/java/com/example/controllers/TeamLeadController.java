@@ -37,7 +37,7 @@ public class TeamLeadController {
 
     @PostMapping(value="/TeamLead", params = "teams")
     public String teams(HttpSession httpSession){
-        return "teamLeadMainPage";
+        return "redirect:/teams";
     }
 
     @PostMapping(value="/TeamLead", params = "projects")

@@ -37,7 +37,7 @@ public class DevController {
 
     @PostMapping(value="/Dev", params = "teams")
     public String teams(HttpSession httpSession){
-        return "devMainPage";
+        return "redirect:/teams";
     }
 
     @PostMapping(value="/Dev", params = "projects")
