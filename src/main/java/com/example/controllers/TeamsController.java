@@ -1,7 +1,6 @@
 package com.example.controllers;
 
 import com.example.models.Project;
-import com.example.models.Role;
 import com.example.models.Team;
 import com.example.models.User;
 import com.example.repositories.ProjectRepository;
@@ -16,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.NoSuchElementException;
 
 @Controller

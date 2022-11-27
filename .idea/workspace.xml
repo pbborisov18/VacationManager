@@ -4,13 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ee4f8ad-0a93-4356-8c23-8029da72bea6" name="Changes" comment="Fixed a bug where you can add users while some fields were empty">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addTeam.jsp" afterDir="false" />
+    <list default="true" id="4ee4f8ad-0a93-4356-8c23-8029da72bea6" name="Changes" comment="Implemented the ability to create teams (only empty ones)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/ProjectsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/projects.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/projectsAllPrivileges.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controllers/CEOMainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/CEOMainPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controllers/DevController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/DevController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controllers/TeamLeadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/TeamLeadController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controllers/TeamsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/TeamsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/repositories/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/repositories/ProjectRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/teamsAllPrivileges.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/teamsAllPrivileges.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/models/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/models/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ceoMainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ceoMainPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/devMainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/devMainPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/teamLeadMainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/teamLeadMainPage.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +281,7 @@
       <workItem from="1669304557509" duration="9289000" />
       <workItem from="1669464898500" duration="6014000" />
       <workItem from="1669478148503" duration="405000" />
-      <workItem from="1669538477796" duration="854000" />
+      <workItem from="1669538477796" duration="7502000" />
     </task>
     <task id="LOCAL-00001" summary="JPA and data side">
       <created>1667300610124</created>
@@ -339,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669540984764</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Implemented the ability to create teams (only empty ones)">
+      <created>1669541190949</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669541190949</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,6 +383,7 @@
     <MESSAGE value="Implemented users display without functionality" />
     <MESSAGE value="Implemented teams display without functionality" />
     <MESSAGE value="Fixed a bug where you can add users while some fields were empty" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug where you can add users while some fields were empty" />
+    <MESSAGE value="Implemented the ability to create teams (only empty ones)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented the ability to create teams (only empty ones)" />
   </component>
 </project>

@@ -41,7 +41,7 @@ public class CEOMainPageController {
 
     @PostMapping(value="/CEO", params = "projects")
     public String projects(HttpSession httpSession){
-        return "ceoMainPage";
+        return "redirect:/projects";
     }
 
     @PostMapping(value="/CEO", params = "leaves")

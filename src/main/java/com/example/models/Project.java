@@ -18,7 +18,7 @@ public class Project {
     private String name;
     private String description;
 
-    @OneToMany(mappedBy = "project", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "project", fetch = FetchType.EAGER)
     @ToString.Exclude
     private List<Team> teamList;
 
