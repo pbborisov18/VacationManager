@@ -8,7 +8,7 @@
 
 <form name = "form" action="/teams" method="post">
   <button name="back" type="submit" value="Back" formaction="/teams/back">Back</button>
-  <button type="submit" name="addTeam" value="Add Team" formaction="/teams/addTeam">Add Team</button>
+  <button type="submit" name="addTeamForward" value="Add Team" formaction="/teams/addTeam">Add Team</button>
 
   <table border="1">
 

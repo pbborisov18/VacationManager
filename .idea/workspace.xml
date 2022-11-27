@@ -4,23 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ee4f8ad-0a93-4356-8c23-8029da72bea6" name="Changes" comment="Implemented users display without functionality">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/TeamsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addUser.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/teams.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/teamsAllPrivileges.jsp" afterDir="false" />
+    <list default="true" id="4ee4f8ad-0a93-4356-8c23-8029da72bea6" name="Changes" comment="Fixed a bug where you can add users while some fields were empty">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addTeam.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controllers/CEOMainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/CEOMainPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controllers/DevController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/DevController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controllers/TeamLeadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/TeamLeadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controllers/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/UsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/models/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/models/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/repositories/TeamRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/repositories/TeamRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ceoMainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ceoMainPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/devMainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/devMainPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/teamLeadMainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/teamLeadMainPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/usersAllPrivileges.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/usersAllPrivileges.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controllers/TeamsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/TeamsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/repositories/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/repositories/ProjectRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/teamsAllPrivileges.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/teamsAllPrivileges.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,7 +271,10 @@
       <workItem from="1668957959242" duration="3781000" />
       <workItem from="1669154839282" duration="135000" />
       <workItem from="1669222121328" duration="18011000" />
-      <workItem from="1669304557509" duration="6958000" />
+      <workItem from="1669304557509" duration="9289000" />
+      <workItem from="1669464898500" duration="6014000" />
+      <workItem from="1669478148503" duration="405000" />
+      <workItem from="1669538477796" duration="854000" />
     </task>
     <task id="LOCAL-00001" summary="JPA and data side">
       <created>1667300610124</created>
@@ -332,7 +325,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668957556005</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Implemented teams display without functionality">
+      <created>1669316656080</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669316656080</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Fixed a bug where you can add users while some fields were empty">
+      <created>1669540984764</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669540984764</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,6 +367,8 @@
     <MESSAGE value="Implemented a working login (NO sessions implemented yet)" />
     <MESSAGE value="Implemented login sessions" />
     <MESSAGE value="Implemented users display without functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented users display without functionality" />
+    <MESSAGE value="Implemented teams display without functionality" />
+    <MESSAGE value="Fixed a bug where you can add users while some fields were empty" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug where you can add users while some fields were empty" />
   </component>
 </project>
