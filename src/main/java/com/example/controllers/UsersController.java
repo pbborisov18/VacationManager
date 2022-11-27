@@ -90,7 +90,7 @@ public class UsersController {
     }
 
     @PostMapping(value = "/users/addUser", params = "cancel")
-    public String returnToUserList(HttpSession httpSession){
+    public String returnToUsers(HttpSession httpSession){
         if(httpSession.getId().equals(httpSession.getAttribute("sessionId"))){
             return "redirect:/users";
         } else {
@@ -109,6 +109,13 @@ public class UsersController {
 
         try{
             if(httpSession.getId().equals(httpSession.getAttribute("sessionId"))) {
+
+                if(username.isBlank() || password.isBlank() || firstName.isBlank() ||
+                    lastName.isBlank() || roles.isBlank() || teams.isBlank()){
+
+                    return "redirect:/users";
+                }
+
                 User user = new User(username, password, firstName, lastName, roleRepository.findRoleByName(roles).get(),
                         teamRepository.findTeamByName(teams).get(), leadDev);
 
@@ -121,7 +128,7 @@ public class UsersController {
 
         } catch (NoSuchElementException e){
 
-            return "redirect:/login";
+            return "redirect:/users";
         }
 
     }

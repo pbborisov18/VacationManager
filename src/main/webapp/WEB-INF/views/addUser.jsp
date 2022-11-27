@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Add User</title>
-    <script type="text/javascript" src="${pageContext.request.contextPath}/js/index.js"></script>
 </head>
 <body>
 
@@ -31,8 +30,8 @@
   <br>
   <label for="leadDev">Is the user Team Lead:</label>
   <select name="leadDev" id="leadDev">
-      <option value="True">Yes</option>
       <option value="False">No</option>
+      <option value="True">Yes</option>
   </select>
   <br>
   <button type="submit" name="addUserButton" value="Add User Button">Add User</button>
