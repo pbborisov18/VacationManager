@@ -58,17 +58,4 @@ public class LoginController {
         return null;
     }
 
-//    private void saveForLater(){
-//
-//        String password = "a";
-//
-//        SecureRandom secureRandom = new SecureRandom();
-//
-//        BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder(10,secureRandom);
-//
-//        User user = new User("Test", bCryptPasswordEncoder.encode(password), "Ivan", "Mitkov",
-//                roleRepository.findRoleByRoleName("Developer").get(),teamRepository.findById(1).get(),true);
-//
-//        userRepository.save(user);
-//    }
 }

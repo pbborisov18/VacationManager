@@ -14,8 +14,11 @@ public class CEOMainPageController {
 
     @GetMapping(value = "/CEO")
     public String ceoMainPage(HttpSession httpSession, Model model){
-        if(httpSession.getId().equals(httpSession.getAttribute("sessionId"))) {
-            User user = (User) httpSession.getAttribute("user");
+
+        User user = (User) httpSession.getAttribute("user");
+
+        if(httpSession.getId().equals(httpSession.getAttribute("sessionId")) && user.getRole().getName().equals("CEO")) {
+
 
             model.addAttribute("username", user.getUsername());
 

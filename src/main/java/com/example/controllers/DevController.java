@@ -13,8 +13,11 @@ public class DevController {
 
     @GetMapping(value = "/Dev")
     public String devMainPage(HttpSession httpSession, Model model){
-        if(httpSession.getId().equals(httpSession.getAttribute("sessionId"))) {
-            User user = (User) httpSession.getAttribute("user");
+
+        User user = (User) httpSession.getAttribute("user");
+
+        if(httpSession.getId().equals(httpSession.getAttribute("sessionId")) && user.getRole().getName().equals("Developer")) {
+
 
             model.addAttribute("username", user.getUsername());
 

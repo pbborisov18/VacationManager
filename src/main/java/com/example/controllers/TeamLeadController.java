@@ -13,8 +13,10 @@ public class TeamLeadController {
 
     @GetMapping(value = "/TeamLead")
     public String teamLeadMainPage(HttpSession httpSession, Model model){
-        if(httpSession.getId().equals(httpSession.getAttribute("sessionId"))) {
-            User user = (User) httpSession.getAttribute("user");
+
+        User user = (User) httpSession.getAttribute("user");
+
+        if(httpSession.getId().equals(httpSession.getAttribute("sessionId")) && user.getRole().getName().equals("TeamLead")) {
 
             model.addAttribute("username", user.getUsername());
 
